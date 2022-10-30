@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Website Layout</title>
+
+<style>
+/* video background */
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* page content */
+
+body {
+  font-family: Trebuchet MS;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: Powderblue;
+  font-weight: bold;
+  text-align: center;
+   text-shadow: 2px 2px 5px Blue;
+}
+
+h1 {
+  font-size: 90px;
+  margin-top: 30vh; 
+}
+
+h2 { font-size: 3rem; }
+
+@media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      background: url("RPReplay_Final1666097461.mp4") no-repeat;
+      background-size: cover;
+    }
+}
+
+main {
+  background-color: lightblue;
+  font-size: 30px;
+  margin-top: 50vh;
+  padding: 10px;
+  position: relative;
+}
+h6 {
+  color: Powderblue;
+  font-weight: bold;
+  text-align: center;
+   text-shadow: 2px 2px 5px Blue;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: powderblue;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color:yellow;
+  color: blue;
+}
+</style>
+</head>
+<body>
+<video id="background-video" autoplay loop muted >
+  <source src="RPReplay_Final1666097461.mp4" type="video/mp4">
+</video>
+
+<h1>Van Gogh's websiite</h1>
+<h2>The best artist in the history</h2>
+
+<main>
+
+<h6> Vincent Willem van Gogh </h6>
+
+
+</main>
+
+
+
+<div class="topnav">
+  <a href="file:///C:/Users/Renad/Documents/about%20by%20dena.html">About him</a>
+  <a href="file:///C:/Users/Renad/Documents/His%20art%20by%20sawsan.html">His art</a>
+  <a href="file:///C:/Users/Renad/Documents/game%20by%20esraa.html">Game</a>
+  <a href="file:///C:/Users/Renad/Documents/merch%20by%20reema.html">Merch</a>
+  <a href="file:///C:/Users/Renad/Documents/his%20death%20by%20renad.html">His Death</a>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+

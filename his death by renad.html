@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>CSS Website Layout</title>
+
+<style>
+/* video background */
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+h1, h2 {
+  color: Powderblue;
+  font-weight: bold;
+  text-align: center;
+   text-shadow: 2px 2px 5px Blue;
+}
+h1 {
+  font-size: 90px;
+  margin-top: 30vh; 
+}
+
+h2 { font-size: 40px; }
+
+@media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      background: url("RPReplay_Final1666097461.mp4") no-repeat;
+      background-size: cover;
+    }
+}
+main {
+  background-color: lightblue;
+  font-size: 2rem;
+  margin-top: 50vh;
+  padding: 10px;
+  position: relative;
+}
+p {
+color:white;
+ text-shadow: 2px 2px 5px blue;
+  text-align: center;
+  font-size: 30px;
+} 
+div {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  transition: width 2s, height 4s;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: blue;
+    overflow: hidden;
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+   background-color:powderblue;
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+   color: blue;
+}
+
+</style>
+</head>
+<body>
+<video id="background-video" autoplay loop muted >
+  <source src="RPReplay_Final1666097461.mp4" type="video/mp4">
+</video>
+<h1>Van Gogh's websiite</h1>
+<h2>The best artist in the history</h2>
+<br>
+<main>
+<p id="demo"></p>
+<h2> Hover Here to see how van gogh have died! </p>
+
+<div id="hover">Van gogh committed suicide by shooting himself on July 29, 1890</div>
+
+
+<p>The death of Vincent van Gogh, the Dutch post-Impressionist painter, occurred in the early morning of 29 July 1890, in his room at the Auberge Ravoux in the village of Auvers-sur-Oise in northern France. Two days earlier, Van Gogh shot himself or was intentionally or accidentally shot by someone else.
+<span> While his death certificate states that he died as a result of suicide</span>
+<span>, at least two biographers have challenged that, saying he may have been intentionally or accidentally shot by someone else. </span> </p>
+</main>
+
+
+<script>
+document.getElementById("demo").innerHTML = "van gogh death";
+</script>
+
+
+</body>
+</html>
+
+
+</body>
+</html>
